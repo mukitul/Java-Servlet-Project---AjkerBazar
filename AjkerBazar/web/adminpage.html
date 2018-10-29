@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>ADMIN PANEL</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <table cellspacing="100">
+                <tr>
+                    <td><div align="center">
+                            <form action="./AdminPage?add" method="post">
+                                <h1>ADD PRODUCT</h1>
+                                <br>
+                                <br>
+
+                                Product Name: <input type="text" name="pname" required> 
+                                <br>
+                                <br>
+
+                                Unit Price: <input type="text" name="uprice" required> 
+                                <br>
+                                <br>
+
+                                Category: <input type="text" name="cat" required> 
+                                <br>
+                                <br>
+                                <input type="submit" value="ADD">
+                            </form>
+
+                        </div></td>
+                    <td><div align="center">
+                            <form action="./AdminPage?delete" method="post">
+                                <h1>DELETE PRODUCT</h1>
+                                <br>
+                                <br>
+
+                                ENTER PRODUCT ID: <input type="text" name="pid" required> 
+                                <br>
+                                <br>
+                                <input type="submit" value="DELETE">
+                            </form>
+                        </div></td>
+                    <td><div align="center">
+                            <form action="./AdminPage?update" method="post">
+                                <h1>UPDATE PRODUCT</h1>
+                                <br>
+                                <br>
+                                Product ID: <input type="text" name="pid" required> 
+                                <br>
+                                <br>
+                                Product Name: <input type="text" name="pname" required> 
+                                <br>
+                                <br>
+
+                                Unit Price: <input type="text" name="uprice" required> 
+                                <br>
+                                <br>
+                                Category: <input type="text" name="cat" required> 
+                                <br>
+                                <br>
+                                <input type="submit" value="UPDATE">
+                            </form>
+                        </div></td>
+                </tr>
+            </table>
+
+            <a href="./AdminPage"><button type="button">Back</button></a>
+
+        </div>
+    </body>
+</html>
